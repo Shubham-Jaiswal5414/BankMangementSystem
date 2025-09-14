@@ -1,0 +1,60 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<style>			
+	body
+	{
+	background-image:url(images/bank4.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:100% 100%;
+	}
+	tr:hover{
+				background-color: aqua;
+			}
+			a:link {
+			color:aqua;
+			 background-color: transparent;
+			 text-decoration: none;
+			}
+			
+			a:active {
+			  color: yellow;
+			  background-color: transparent;
+			  text-decoration: underline;
+			  }
+			  a:hover {
+			    color: whitesmoke;
+			    background-color: transparent;
+			    text-decoration: underline;
+			           }
+	 </style>  
+	 
+
+		<h1 align="center" style="color:whitesmoke; text-decoration: underline;">CUSTOMER RECORDS RESULTS:</h1>
+		<marquee>
+				<h1 style="color: gold;"> $_$_$___MAKE_SAFE_TRANSACTIONS___$_$_$</h1>
+				</marquee>
+
+		<table width="1525px" border="6" bgcolor="aliceblue">
+			<tr>
+				<td bgcolor="yellow">BANK_ID</td>
+				<td bgcolor="yellow">NAME</td>
+				<td bgcolor="yellow">ADDRESS</td>
+				<td bgcolor="yellow">PHONE_NUMBER</td>
+				<td bgcolor="yellow">BALANCE</tdbgcolor="yellow">
+				<td bgcolor="yellow">LOAN_AMOUNT</td>
+			</tr>
+		<tr th:each="r :${searchrecords}">
+			<td th:text="${r.Bank_ID}"></td>
+			<td th:text="${r.Name}"></td>
+			<td th:text="${r.Address}"></td>
+			<td th:text="${r.Phone_No}"></td>
+			<td th:text="${r.Balance}"></td>
+			<td th:text="${r.Loan_Amt}"></td>
+			
+		</tr>
+		</table>
+	
+        
+		<p><a th:href="@{/main}" class="btn btn-info"> *(◠‿◠)* BACK TO HOME *(◠‿◠)*</a><p><br>
+	</body>
+</html>

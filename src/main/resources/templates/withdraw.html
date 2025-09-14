@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<head>
+</head>
+<body>
+
+	<style>
+	body
+	{
+	background-image:url(images/bank4.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:100% 100%;
+	}
+	</style>
+	<script>
+			 function myFunction() {
+			   window.alert("DATA SUCCESSFULLY UPDATED");
+			 }
+			 </script>  
+		
+	<h1 align="center" style="color:gold;"> ｡◕ ‿ ◕｡  PLEASE ENTER BANK ID AND WITHDRAW AMOUNT ｡◕ ‿ ◕｡</h1>
+	<marquee>
+				<h3 style="color: red"> !!! PLEASE ENTER CORRECT DETAILS !!!</h3>
+				</marquee>
+
+	
+
+<div align="center">
+<form method="post" action="/withdrawamt">
+<label style="color:whitesmoke;"> ENTER BANK ID:</label>
+<input type="text" class="form-control"  name="gBank_ID" /><br>
+<label style="color:whitesmoke;"> ENTER WITHDRAW AMOUNT</label>
+<input type="text" class="form-control"  name="gDeposit" /><br>
+
+</br>
+
+<td><input button type="submit" name="b1" value=" WITHDRAW " onclick="myFunction()"  class="btn btn-info"/></td><br>
+<td><input button type="reset" name="b2" value=" RESET " class="btn btn-warning" /></td><br>
+</tr>
+</form>
+</div>     
+<p><a th:href="@{/main}" class="btn btn-info"> *(◠‿◠)* BACK TO HOME *(◠‿◠)*</a><p><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+	<div class="media">
+	    <div class="media-left">
+	      <img  th:src="@{images/rights.jpg}"  class="media-object"width="130px" height="130px">
+	    </div>
+	    <div class="media-body">
+	      <h2 class="media-heading" style="color:gold;">!! ALL RIGHTS RESERVED !!</h2>
+		  <marquee scrollamount="18">
+			<br>
+			<br>
+	      <h3><p style="color:red" >@Copyright in the pages and the screen displaying the pages, and in the information and material therein and their arrangement, is owned by Shashwat Bank Limited, unless otherwise indicated.   	</p>
+	     </marquee>
+	  </div>
+	  </div>
+	  
+</body>
+</html>

@@ -1,0 +1,84 @@
+
+<html xmlns:th="http://www.thymeleaf.org">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+	body
+	{
+	background-image:url(images/bank2.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:100% 100%;
+	}
+	</style>
+	<script>
+		 function myFunction() {
+		   window.alert("DATA SUCCESSFULLY  INSERTED");
+		 }
+		 </script>  	
+		 
+	<h1 align="center" style="color:gold;"> *(^_^)*  WELCOME CUSTOMER  *(^_^)*</h1>
+	<marquee>
+				<h3 style="color: red"> !!! PLEASE ENTER CORRECT DETAILS !!!</h3>
+				</marquee>
+
+	
+	<form method="post" action="/insertrecord">
+		<form align="center">
+		<table align="center">
+		<tr>
+		<td input align="left"><label style="color:whitesmoke;"> ENTER BANK ID:</label></td>
+		<td input align="left"><input type="text"  class="form-control" name="gBank_ID" required /><br></td>
+		</tr>
+		
+		<tr>
+		<td align="left"><label style="color:whitesmoke;"> ENTER YOUR NAME </label></td>
+		<td align="left"><input type="text" class="form-control" name="gName" required /><br></td>
+		</tr>
+		
+		<tr>
+		<td align="left"><label style="color: whitesmoke;"> ENTER YOUR ADDRESS </label></td>
+		<td align="left"><input type="text" class="form-control" name="gAddress" required /><br></td>
+		</tr>
+
+		<tr>
+		<td align="left"><label style="color:whitesmoke;"> ENTER YOUR PHONE NO:</label></td>
+		<td align="left"><input type="text" class="form-control"  name="gPhone_No" required/><br></td>
+	    </tr>
+		
+		<tr>
+		<td align="left"><label style="color:whitesmoke;"> ENTER DEPOSIT AMOUNT </label></td>
+		<td align="left"><input type="text"  class="form-control" name="gBalance" required /><br></td>
+		</tr>
+
+		<tr>
+		<td align="left"><label style="color:whitesmoke;"> ENTER YOUR LOAN AMOUNT </label></td>
+		<td align="left"><input type="text"  class="form-control" name="gLoan_Amt" required /><br></td>
+		</tr>
+		<tr>
+	    <td  align="left"><input button type="submit" name="b1" value="CREATE" onclick="myFunction()" class="btn btn-success"/></td><br>
+	    <td  align="left"><input button type="reset" name="b2" value="RESET"  class="btn btn-warning"/><br></td>
+	    </tr>
+	   
+	</table>
+	</form>
+	<p><a th:href="@{/main}" class="btn btn-info"> *(◠‿◠)* BACK TO HOME *(◠‿◠)*</a><p>
+		<br>
+
+			<div class="media">
+			    <div class="media-left">
+			      <img  th:src="@{images/rights.jpg}"  class="media-object"width="130px" height="130px">
+			    </div>
+			    <div class="media-body">
+			      <h2 class="media-heading" style="color:gold;">!! ALL RIGHTS RESERVED !!</h2>
+				  <marquee scrollamount="18">
+					<br>
+					<br>
+			      <h3><p style="color:red" >@Copyright in the pages and the screen displaying the pages, and in the information and material therein and their arrangement, is owned by Shashwat Bank Limited, unless otherwise indicated.   	</p>
+			     </marquee>
+			  </div>
+			  </div>
+			  
+	</body>
+</html>

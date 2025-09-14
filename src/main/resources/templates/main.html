@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http//www.thymeleaf.org">
+<head>	
+    <title>Bank Management System</title>
+    <link rel="stylesheet" th:href="@{css/style.css}">
+</head>
+<body>
+	<p align="center"><font size="24" style="color:whitesmoke">
+		*(◠‿◠)* WELCOME TO BANK *(◠‿◠)*
+	   </font></p>
+		<video autoplay loop muted plays-inline class="backvideo">
+			<source th:src="@{video/vid7.mp4}" type="video/mp4">				</video>				
+		<div class="content ">
+	    <table align="center">	
+		<tr>
+		<td><a th:href="@{/admin}">ADMIN LOGIN</a></td>
+		</tr>	
+		<tr>
+		<td><a th:href="@{/insert}">NEW ACCOUNT</a></td>
+		</tr>
+		<tr>
+		<tr>
+         <td><a th:href="@{/deposit}">DEPOSIT</a></td>
+		</tr>
+		
+		<tr>
+        <td><a th:href="@{/withdraw}">WITHDRAW</a></td>
+		</tr>
+		
+		<tr>
+        <td><a th:href="@{/search}">CHECK BALANCE</a></td>
+		</tr>
+					
+		<tr>	      
+		<td><a th:href="@{/loan}">APPLY FOR LOAN</a></td>
+		</tr>
+
+		<tr>	      
+		<td><a th:href="@{/repayloan}">REPAY LOAN</a></td>
+		</tr>
+
+		</table>
+		</div>
+
+</body>
+</html>
